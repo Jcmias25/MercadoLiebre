@@ -1,0 +1,103 @@
+
+body { 
+
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+
+}
+
+.header {
+    background-color: #EAC926;
+}
+img {
+
+    width: 100%;
+}
+
+main {
+    width: 90% ;
+    margin: 0 auto;
+}
+
+.item{
+    background-color: white;
+    
+    
+    
+}
+
+.item-detalle{
+    border-top: 1px solid #ebebeb;
+    /* margin: 15px 15px 15px 15px; */
+    
+}
+
+.item-detalle i{
+
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color:green;
+}
+
+.precio {
+
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titular {
+
+    font-size: 24px;
+}
+
+.descuento {
+
+    font-size: 16px;
+    color:green;
+    margin-top: 0px;
+}
+
+.descripcion {
+
+    font-size: 16px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+
+    text-align: center;
+    border-radius: 15%;
+    background-color: blue;
+    color:white;
+    padding: 10px
+}
+
+.centrado{
+
+    text-align: center;
+}
+
+.copy{
+    color:gray;
+    text-align: left;
+}
+
+.pie{
+    background-color: white;
+    border-color: black;
+    text-align: center;
+} 
+.pie i{
+    color:blue;
+    font-size: 2em;
+    
+}
+
+
