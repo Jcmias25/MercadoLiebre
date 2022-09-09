@@ -13,6 +13,7 @@ app.listen(2000, () => {
 app.get('/', (req,res) => {
 
     res.sendFile(path.resolve(__dirname, 'src/views/home.html'))
+    
 });
 
 

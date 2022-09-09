@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "CURSO INGRESO",
+			"path": "../CURSO INGRESO"
+		},
+		{
+			"name": "CURSO FULL STACK",
+			"path": "../CURSO FULL STACK"
+		},
+		{
+			"path": "../TP INTEGRADOR"
+		},
+		{
+			"path": "../REPO PROFESOR"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
