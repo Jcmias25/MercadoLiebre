@@ -1,6 +1,11 @@
 * {
-    box-sizing: border-box;
+
+box-sizing: border-box;
 }
+
+
+
+
 body { 
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
@@ -10,11 +15,81 @@ body {
 
 .header {
     background-color: #EAC926;
+    margin:auto;
 }
+
+
 img {
 
     width: 100%;
 }
+
+
+div.top-bar{
+display: flex;
+flex-wrap: wrap;
+padding: 5%;
+align-items: center;
+padding-bottom: 0;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+    padding: 10px;
+}
+
+.input{
+    border:none;
+    width: 100%;
+}
+
+.form-submit {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    width: 50%;
+}
+.form-submit i {
+
+    font-size: 15px;
+    color: grey;
+}
+
+
+
+
+
+h2.frase-top{
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    font-size: 100%;
+    margin: 20px;
+}
+
+.nav {
+    display: none;
+}
+.nav ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
 
 main {
     width: 90% ;
@@ -23,39 +98,41 @@ main {
 
 .item{
     background-color: white;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border
+    margin-bottom: 10px;
 }
 
 .item-detalle{
     border-top: 1px solid #ebebeb;
     padding: 15px;
-    /* margin: 15px 15px 15px 15px; */
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+
     
 }
 
-.fondo-camion{
-
-    background-color: white;
+.item-detalle i{
+    display: block;
+   font-size: 15px;
+    color:green;
+    padding: 10px;
     width: 40px;
     height: 40px;
-    border: black 1px solid;
-    border-radius: 100%;
-    border-color: green;
-    margin-top: 0px;
-    padding: 10px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%; 
+    position: absolute;
+    right: 30px;
+
 }
-.item-detalle i{
-    font-size: 15px;
-    color:green;
-}
+
 
 .precio {
 
     font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    flex:3;
+
 }
 
 .titular {
@@ -65,14 +142,21 @@ main {
 
 .descuento {
 
-    font-size: 16px;
+    font-size: 13px;
     color:green;
-    margin-top: 0px;
+    flex:7;
+    font-weight: bold;
+
 }
 
 .descripcion {
 
     font-size: 16px;
+    height: 0px;
+    color: #666;
+    display: none;
+    padding-bottom: 10px;
+
 }
 
 .burger-menu{
@@ -85,28 +169,145 @@ main {
     border-radius: 15%;
     background-color: blue;
     color:white;
-    padding: 10px
+    padding: 10px;
+    font-size: 20px;
+
 }
+
 
 .centrado{
 
     text-align: center;
 }
 
-.copy{
+.pie .copy{
     color:gray;
     text-align: left;
 }
 
 .pie{
-    background-color: white;
+
+    margin-top: 50px;
+    background-color: #ebebeb;
     border-color: black;
     text-align: center;
+
 } 
+
+.pie p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
 .pie i{
     color:blue;
     font-size: 2em;
+    text-align: center;
+    margin: 15px;
     
 }
 
 
+
+/* MEDIA QUERYS!!!! */
+
+@media (min-width:361px) {
+
+    .descripcion{
+
+        display: block;
+    }
+
+    .item{
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+    }
+
+
+}
+
+
+@media (min-width:768px) {
+
+    .nav{
+        display: block;
+    }
+
+
+
+    div.top-bar{
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: -4%;
+    }
+
+    header div.logo{
+
+        width: 30%;
+    }
+
+
+    h2.frase-top{
+
+        width: 145px;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 24px;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    .burger-menu{
+
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .nav a {
+        font-size: 12px;
+        margin-top: 30px;
+        padding: 0 5px;
+
+        
+    }
+
+    .nav ul{
+
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .nav li{
+
+        padding: 10px;
+        padding-bottom:0;
+    }
+
+    .productos article{
+
+        width: 45%;
+    }
+    .productos{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+
+    }
+
+}
+
+@media (min-width:1024px) {
+    .productos article{
+
+        width: 22%;
+    }
+
+
+}
