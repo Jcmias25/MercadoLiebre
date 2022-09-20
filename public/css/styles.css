@@ -1,5 +1,6 @@
 * {
-
+margin: 0;
+padding: 0;
 box-sizing: border-box;
 }
 
@@ -14,8 +15,18 @@ body {
 }
 
 .header {
+    width: 100%;
     background-color: #EAC926;
     margin:auto;
+
+}
+
+.header-form{
+    width: 100%;
+    background-color: #EAC926;
+    margin:auto;
+    position: fixed;
+    top: 0;
 }
 
 
@@ -36,7 +47,7 @@ padding-bottom: 0;
 header div.logo,
 header .form{
     width: 50%;
-    padding: 10px;
+    padding: 36px;
 }
 
 .input{
@@ -91,30 +102,81 @@ h2.frase-top{
 
 
 
-main {
+.main-form {
+    margin-top: 204px;
     width: 90% ;
-    margin: 0 auto;
 }
+.titular {
 
+    font-size: 24px;
+    margin: 15px;
+}
 .item{
     background-color: white;
     margin-bottom: 10px;
 }
 
 .item-detalle{
-    border-top: 1px solid #ebebeb;
     padding: 15px;
+    border-top: 1px solid #ebebeb;
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
+    position: relative;
 
     
 }
 
+.descripcion {
+
+    font-size: 16px;
+    padding: 15px;
+    padding-bottom: 2px;
+    color: #666;
+    display: none;
+    width: 100%;
+}
+
+.item:hover .descripcion {
+
+    display: block;
+    
+}
+
+.item:hover {
+
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+footer p i:hover {
+
+    color: black;
+}
+
+
+.precio {
+
+    font-size: 18px;
+    padding-left: 15px;
+    flex:3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.descuento {
+
+    font-size: 13px;
+    color:green;
+    flex:7;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
 .item-detalle i{
     display: block;
-   font-size: 15px;
+    font-size: 16px;
     color:green;
     padding: 10px;
     width: 40px;
@@ -123,42 +185,15 @@ main {
     background-color: #FFF;
     border-radius: 50%; 
     position: absolute;
-    right: 30px;
-
+    right: 20px;
+    top: -20px;
+    transition: transform 300ms;
 }
 
+main section article i:hover{
 
-.precio {
-
-    font-size: 18px;
-    flex:3;
-
+    transform: rotate(-90deg);
 }
-
-.titular {
-
-    font-size: 24px;
-}
-
-.descuento {
-
-    font-size: 13px;
-    color:green;
-    flex:7;
-    font-weight: bold;
-
-}
-
-.descripcion {
-
-    font-size: 16px;
-    height: 0px;
-    color: #666;
-    display: none;
-    padding-bottom: 10px;
-
-}
-
 .burger-menu{
     text-align: center;
 }
@@ -182,7 +217,7 @@ main {
 
 .pie .copy{
     color:gray;
-    text-align: left;
+    text-align: center;
 }
 
 .pie{
@@ -209,20 +244,79 @@ main {
 }
 
 
+/* HOJA FORMS */
+
+.create-form{
+padding: 20px 15px;
+
+
+}
+
+.control-formulario {
+
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    margin-bottom: 15px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.form-bottom{
+
+    background-color: green;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.control-formulario-desc {
+    display: flex;
+    align-items: center;
+}
+
+.textarea{
+
+    margin-left: 10px;
+    flex: 7;
+}
+.control-formulario-of{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-formulario-of label {
+
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
 
 /* MEDIA QUERYS!!!! */
 
 @media (min-width:361px) {
 
-    .descripcion{
 
-        display: block;
-    }
-
-    .item{
+    /* .item{
 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);;
-    }
+    } */
 
 
 }
@@ -307,7 +401,36 @@ main {
     .productos article{
 
         width: 22%;
+
     }
+
+    .pie p{
+
+        width: 30%;
+    }
+    .pie {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        background-color: #fff;
+        padding-top: 25px;
+    }
+
+    .pie .copy {
+
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    h2.frase-top {
+
+        font-size: 20px;
+        width: 20%;
+        padding-right: 0;
+    }
+
 
 
 }

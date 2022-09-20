@@ -16,4 +16,14 @@ app.get('/', (req,res) => {
     
 });
 
+app.get('/form', (req,res) => {
+
+    res.sendFile(path.resolve(__dirname, 'src/views/form.html'))
+    
+});
+
+
+
+
+
 
