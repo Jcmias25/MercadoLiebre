@@ -301,6 +301,122 @@ padding: 20px 15px;
     margin-left: 0;
 }
 
+/* HOJA REGISTER */
+
+.register-form {
+
+    margin: 5%;
+}
+
+.register-form div {
+
+    text-justify: center;
+} 
+
+.register {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.register input {
+
+    margin-bottom: 20px;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 1%;
+}
+.register-form h4 {
+    margin-bottom: 15px;
+}
+
+.register-form h1 {
+
+    text-align: center;
+    margin-bottom: 1%;
+}
+.register label { 
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    justify-content: center;
+
+}
+
+.profile div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intereses div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10vw;
+    justify-content:space-between;
+    margin-left: 0;
+    padding-left: 10px;
+}
+
+.intereses div label {
+    width: 60%;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviar,
+.borrar {
+    width: 20%;
+    height: 5vh;
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* HOJA LOGIN */
+
+.login form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.login form input {
+
+    margin-bottom: 10px;
+    padding: 1%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.login form button {
+
+    background-color: blue;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+}
+
 
 
 
