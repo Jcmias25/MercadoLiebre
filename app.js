@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.resolve(__dirname,'public')));
 
-app.listen(2000, () => {
+app.listen(process.env.PORT || 2000, () => {
 
     console.log('Servidor corriendo en el puerto 2000');
     
